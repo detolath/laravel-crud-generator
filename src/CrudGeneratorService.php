@@ -95,9 +95,9 @@ class CrudGeneratorService
         $filegenerator->Generate();
         //###############################################################################
 
-        $addroute = 'Route::get(\'/'.$this->viewFolderName.'/grid\', \''.$this->controllerName.'Controller@grid\');';
-        $this->appendToEndOfFile(base_path().'/routes/web.php', "\n".$addroute, 0, true);
-        $this->output->info('Adding Route: '.$addroute );
+        //$addroute = 'Route::get(\'/'.$this->viewFolderName.'/grid\', \''.$this->controllerName.'Controller@grid\');';
+        //$this->appendToEndOfFile(base_path().'/routes/web.php', "\n".$addroute, 0, true);
+        //$this->output->info('Adding Route: '.$addroute );
 
 
         $addroute = 'Route::resource(\'/'.$this->viewFolderName.'\', \''.$this->controllerName.'Controller\');';
